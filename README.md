@@ -10,8 +10,6 @@ The zip file contains the two notebooks
   - 1. Part I : Feature_Engineering
   - 2. Part II : Prediction
 
-
-
 -   II. Data & Notebooks
 The database "comments.csv" was our principal database containing over 4 million reddit comments, downloaded from Kaggle. 
 Two .ipnyb notebooks were executed on the Jupyter Notebook interface on Python3 kernel are used to arrive at the final result 
@@ -25,27 +23,26 @@ These must be run one after the other to obtain  the final result.
 
 - IV. Explaining the choice of features
 As the name suggests, the first notebook contains the extraction of features based on :
-  -  Text content
+  - Text content
   - Time of comments
   - Network mining
 
-The list of the 43 features are given below :   
-    - A. Content based features : (Stylometric characteristics)
-      -1. Length of the comment in words
-      -2. Count words beginning with capital letters
-      -3. Count number of exclamations
-      -4. Question marks
-      -5. Punctuation count
-      -6. Number of 'I's used in the comment
-      -7. Number of urls
-      -8. Associated subreddits
+The list of the 43 features are given below :  
+A. Content based features : (Stylometric characteristics)
+1. Length of the comment in words
+2. Count words beginning with capital letters
+3. Count number of exclamations
+4. Question marks
+5. Punctuation count
+6. Number of 'I's used in the comment
+7. Number of urls
+8. Associated subreddits
 
 I added these two features to improve the model:
-      - 9. Lexical Diversity
-      -10. Number of times comment references another comment
+9. Lexical Diversity
+10. Number of times comment references another comment
 
-Text Mining (LDA) features
-20 features
+Text Mining (LDA) features : 20 features
 
 B. Time based features
 
@@ -70,11 +67,11 @@ C. Network mining based features
 9. Number of comments made by author
 
 
-V. Model Used
-- XGBoost
+- V. Model Used
+	- XGBoost
 The metric we use to evaluate the performance of the  models is the MAE. 
-- Tuning of hyperparameters using parfit was used. 
+	- Tuning of hyperparameters using parfit was used. 
 
-VI. Conclusion
+- VI. Conclusion
 Structural and time based features were more important to the model than text based features
 
